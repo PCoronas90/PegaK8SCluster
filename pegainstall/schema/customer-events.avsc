@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "name": "CustomerEvent",
+  "fields": [
+    {"name": "customerId", "type": "int"},
+    {"name": "customerName", "type": "string"}
+  ]
+}
