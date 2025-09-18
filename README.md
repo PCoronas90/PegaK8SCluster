@@ -2,7 +2,7 @@
 
 This local Pega cluster is deployed using Docker containers orchestrated via Kubernetes. The architecture consists of **six containers**, each serving a specific role:
 
-- **Pega Platform 24.8.0**
+- **Pega Platform 8.24.0**
 - **pgAdmin** – for managing PostgreSQL databases
 - **Kafka** – for event streaming
 - **Zookeeper** – required by Kafka for coordination
