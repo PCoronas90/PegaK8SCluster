@@ -9,12 +9,17 @@ This local Pega cluster is deployed using Docker containers orchestrated via Kub
 - **Schema Registry** – for managing Avro schemas
 - **PostgreSQL** – as the backend database for Pega
 
+![Alt text](images/Cluster.png)  
+
 ## Network Configuration
 
 Two ports are exposed to enable external access:
 
 - **Port 8080** – for HTTP connections
+![Alt text](images/http.png)  
 - **Port 8443** – for HTTPS connections, required to enable **Constellation** UI
+![Alt text](images/https.png)  
+
 
 The HTTPS connector is configured in **Tomcat’s `server.xml`** file. This file is mounted into the container via the `docker-compose.yml` configuration. Additionally, a script is provided to generate a **Java keystore**, which is then placed in the container path `/opt/pega/ssl`.
 
@@ -30,6 +35,10 @@ Kafka is configured with three topics to facilitate communication between Pega a
 - **`pega-events`** – used for writing events from Kafka, which are consumed by Pega
 - **`pega-input`** – used for reading events from Pega, which are consumed by Kafka
 - **`pega-logs`** – used for centralized logging and monitoring
+
+![Alt text](images/KafkaTopic.png)  
+
+
 
 Since this is a **test environment**, the two main topics (`pega-events` and `pega-input`) are configured with:
 
