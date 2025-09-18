@@ -32,11 +32,15 @@ The Kafka container is exposed as:
 
 Kafka is configured with three topics to facilitate communication between Pega and external systems:
 
+![Alt text](images/KafkaTopic.png)  
+
 - **`pega-events`** – used for writing events from Kafka, which are consumed by Pega
 - **`pega-input`** – used for reading events from Pega, which are consumed by Kafka
 - **`pega-logs`** – used for centralized logging and monitoring
 
-![Alt text](images/KafkaTopic.png)  
+![Alt text](images/PegaKafkaConnection.png)  
+![Alt text](images/pegaTopic.png)  
+  
 
 
 
