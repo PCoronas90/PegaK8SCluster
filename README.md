@@ -1,6 +1,6 @@
-# Local Pega Cluster Created Using Docker and Kubernetes
+# Local Pega Cluster Created Using Docker
 
-This local Pega cluster is deployed using Docker containers orchestrated via Kubernetes. The architecture consists of **six containers**, each serving a specific role:
+This local Pega cluster is deployed using Docker containers. The architecture consists of **six containers**, each serving a specific role:
 
 - **Pega Platform 8.24.0**
 - **pgAdmin** – for managing PostgreSQL databases
